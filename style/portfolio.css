@@ -1,51 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
 }
-header{
-    background-color: #FFF8F3;
-    padding-top: 51px;
+header {
+  background-color: #fff8f3;
+  background: url(/images/developer.png), url(/images/header_bg.png), #fff8f3;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  padding-top: 51px;
 }
-nav{
-    width: 60%;
-    max-width: 1140px;
-    border: 1px solid red;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
+nav {
+  width: 60%;
+  max-width: 1140px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
 }
-.logo h2{
-    font-size: 45px;
-    font-weight: 900;
-
+.logo h2 {
+  font-size: 45px;
+  font-weight: 900;
 }
-#orange{
-    color:#FD6E0A;
-
+#orange {
+  color: #fd6e0a;
 }
-nav .menu{
-    display: flex;
-    list-style-type: none;
-    gap: 51px;
-    align-items: center;
+nav .menu {
+  display: flex;
+  list-style-type: none;
+  gap: 51px;
+  align-items: center;
 }
-nav .menu a{
-    font-size: 20px;
-    color: #474747;
-    text-decoration: none;
+nav .menu a {
+  font-size: 20px;
+  color: #474747;
+  text-decoration: none;
 }
-.btn{
-    background-color: #FD6E0A;
-    border: none;
-    border-radius: 5px;
-    padding: 18px 35px;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-
+.btn {
+  background-color: #fd6e0a;
+  border: none;
+  border-radius: 5px;
+  padding: 18px 35px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+#banner {
+  margin: 47px 38px 0 231px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#banner .banner-content {
+  max-width: 585px;
+}
+#banner .banner-content h2 {
+  font-size: 45px;
+  color: #474747;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#banner .banner-content h1 {
+  font-size: 85px;
+  color: #181818;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#banner .banner-content p {
+  font-size: 18px;
+  color: #757575;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+#banner .banner-image img {
+  max-width: 585px;
+  vertical-align: middle;
 }
