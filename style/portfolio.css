@@ -7,6 +7,9 @@
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
 }
+body p {
+  text-align: justify;
+}
 header {
   background-color: #fff8f3;
   background: url(/images/developer.png), url(/images/header_bg.png), #fff8f3;
@@ -28,7 +31,7 @@ nav {
 #orange {
   color: #fd6e0a;
 }
-nav .menu {
+.menu {
   display: flex;
   list-style-type: none;
   gap: 51px;
@@ -48,6 +51,11 @@ nav .menu a {
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+.btn-grp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 #banner {
   margin: 47px 38px 0px 231px;
@@ -77,7 +85,7 @@ nav .menu a {
   margin-bottom: 30px;
 }
 #banner .banner-image img {
-  max-width: 650px;
+  max-width: 750px;
   vertical-align: middle;
 }
 #about,
@@ -125,13 +133,12 @@ nav .menu a {
   max-width: 1140px;
   margin: 0 auto;
 }
-#skills .skills-container .skils-box {
+#skills .skils-box {
   display: flex;
   gap: 24px;
 }
 .skils-box .skills-card {
   padding: 30px;
-  border: 1px solid rebeccapurple;
   max-width: 248px;
   box-shadow: 0 6px 40px 0 #00000042;
   border-radius: 5px;
@@ -227,4 +234,104 @@ footer .footer-container {
   border: none;
   border-radius: 5px;
   color: #757575;
+}
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  .btn-grp {
+    justify-content: center;
+  }
+  button:hover {
+    background-color: #fd6b0a93;
+    color: black;
+  }
+  header {
+    background: url(/images/header_bg.png), #fff8f3;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    text-align: center;
+  }
+  nav {
+    gap: 20px;
+  }
+  nav .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #banner {
+    margin: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+  #banner .banner-content h1 {
+    font-size: 44px;
+    color: #181818;
+    font-weight: bold;
+  }
+  #banner .banner-image img {
+    width: 100%;
+  }
+  .section-heading h2 {
+    font-size: 30px;
+  }
+  #about,
+  #skills,
+  #resume {
+    padding-top: 60px;
+  }
+  #about .about-container {
+    padding: 10px;
+    width: 100%;
+  }
+  #about .about-container .about-info {
+    gap: 40px;
+  }
+  .about-info .info-card h4 {
+    font-size: 14px;
+  }
+  #skills .skills-container .skils-box,
+  .about-info,
+  .footer-container,
+  .resume-container,
+  nav,
+  #banner {
+    flex-direction: column;
+  }
+  .skils-box .skills-card {
+    max-width: 100%;
+  }
+  #skills .skills-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .section-heading {
+    max-width: 100%;
+  }
+  #resume .resume-container {
+    width: 100%;
+    margin: 20px;
+    gap: 24px;
+  }
+  .text-center {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-container {
+    margin: 0 auto;
+    display: flex;
+    gap: 116px;
+  }
+  .footer-container form input[type="text"],
+  .footer-container form input[type="email"],
+  .footer-container form textarea {
+    width: 100%;
+  }
 }
